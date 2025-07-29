@@ -7,7 +7,7 @@ const AllAgents = () => {
 
   const fetchAgents = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/admin/all", {});
+      const res = await axios.get("https://mern-token-distribution.onrender.com/api/admin/all", {});
 
       setAgents(res.data); // Assuming it's an array of agents
     } catch (error) {
