@@ -19,7 +19,7 @@ const Addagent = () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        "http://localhost:3000/api/admin/add-agent",
+        "https://mern-token-distribution.onrender.com/api/admin/add-agent",
         { name, email, phone, password },
         {
           headers: {
