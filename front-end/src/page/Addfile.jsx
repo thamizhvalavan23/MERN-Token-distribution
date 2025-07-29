@@ -36,7 +36,7 @@ const Addfile = () => {
 
       const token = localStorage.getItem('token')
 
-      const res = await axios.post('http://localhost:3000/api/admin/add-file', formData, {
+      const res = await axios.post('https://mern-token-distribution.onrender.com/api/admin/add-file', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}`
